@@ -1,0 +1,26 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: liquorcabby_development
+  pool: 5
+  username: Shefali
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: liquorcabby_test
+  pool: 5
+  host: localhost
+  username: Shefali
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: liquorcabby_production
+  pool: 5
+  host: localhost
+  username: Shefali
+  password:
