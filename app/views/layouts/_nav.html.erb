@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="large-12.columns">
+    <div class="nav-bar right">
+     <ul class="button-group">
+       <%== login_nav %>
+      </ul>
+    </div>
+    <ul class="button-group">
+      <li><%= link_to('Home', root_path, :class => 'button medium') %></li>
+      <li><%= link_to('Cocktails', cocktails_path, :class => 'button medium') %></li>
+      <li><%= link_to('Favorites', @auth, :class => 'button medium') %></li>
+      <li><%= link_to('Drinking Buddies', users_path, :class => 'button medium') %></li>
+    </ul>
+  </div>
+</div>

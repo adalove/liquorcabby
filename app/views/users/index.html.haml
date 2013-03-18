@@ -1,0 +1,7 @@
+#buddies
+  - @users.each do |user|
+    =user.name
+    %br
+      -user.cocktails.each do |cocktail|
+        =cocktail.name + ','
+

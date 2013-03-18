@@ -1,0 +1,7 @@
+- @cocktails.each do |cl|
+  .cocktail
+    %h3= link_to(cl.name, cl)
+    - cl.ingredients.each do |ing|
+      %h5= ing.name
+    #faves= link_to('favorite', favorite_cocktail_path(cl), :method => 'POST', :remote => true, :class => 'star') if @auth.id != cl.created_by
+    = link_to(cl.created_by, '#', :class => 'created_by')

@@ -1,0 +1,6 @@
+#favoritesbox
+  %h3=@user.name + ' ' + 'loves:'
+  %br
+  -@user.cocktails.each do |cocktail|
+    =cocktail.name + 's'
+    %br

@@ -35,4 +35,6 @@ describe 'Session' do
       page.should_not have_button('Cancel')
     end
   end
+
+
 end

@@ -9,6 +9,6 @@
       = f.password_field :password
       = f.label :password_confirmation
       = f.password_field :password_confirmation
-      = button_to_function('Cancel', 'cancel_user_form()')
-      = f.submit
+      = button_to_function('Cancel', 'cancel_user_form()', :class => 'button tiny success')
+      = f.submit(:class => 'button tiny success')
   .large-9.columns
